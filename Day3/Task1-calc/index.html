@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        function calc(){
+            var operation = prompt("Enter the operation sum /minus/mul");
+            var num1 = Number(prompt("Enter the num1"));
+            var num2 = Number(prompt("Enter the num2"));
+            
+            
+            const sum =()=>console.log(num1+num2);
+
+            const minus =()=>console.log(num1-num2);
+
+            const mul =()=>{
+            var result=num1*num2;
+            console.log(result)
+            }
+
+            switch(operation){
+                case "sum": sum();
+                            break;
+                case "minus":minus();
+                            break;
+                case "mul":mul();
+                            break;
+            }
+        }
+        calc();
+    </script>
+    
+</body>
+</html>
