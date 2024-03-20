@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("even number using for loop")
+        function printeven(a){
+            for(let i=0;i<=a;i++){
+                if(i%2===0){
+                    console.log(i)
+                }
+            }
+        }
+        printeven(20);
+
+        console.log("even number using do..while loop")
+        function even(n){
+            i=1;
+            do {
+                if(i%2===0)
+                    console.log(i)
+                i++;
+            }while(i<=n)
+        }
+        even(100);
+
+    // check giving number is prime number or not
+    function primeCheck(number){
+     let prime=true;     
+    if(number==1){
+        console.log("1 is not a prime number")
+    }  
+    else if(number>1)
+        {
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                prime = false;
+                break;
+            }
+        }
+
+        if (prime) {
+            console.log(`${number} is a prime number`);
+        } else {
+            console.log(`${number} is a not prime number`);
+        }
+    }   }
+    primeCheck(3);    
+
+    
+
+</script>
+</body>
+</html>

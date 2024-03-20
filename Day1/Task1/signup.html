@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body >
+    
+    <h1>Student Sign Up</h1>
+    <main>
+
+        <form action="./action.php">
+            <label for="username">User name</label>
+            <input type="text" name="username" id="username" placeholder="Enter you name"><br><br>
+    
+            <label for="email">Email</label>
+            <input type="email" name="uemail" placeholder="Enter you email" id="uemail"><br><br>
+    
+            <label for="number">Phone Number</label>
+            <input type="tel" name="number" id="number"><br><br>
+            
+            <label for="password">Password</label>
+            <input type="password" name="upassword" id="upassword" placeholder="enter your password"><br><br>
+    
+            <label for="gender">Male</label>       
+            <input type="radio" name="gender" id="male">
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" id="female">
+            <br><br>
+    
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="mumbai">Mumbai</option>
+                <option value="chennai">Chennai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="noida">Noida</option>
+            </select>
+            <br><br>
+    
+            <!-- <label for="interest">Reading</label>
+            <input type="checkbox" name="interest" id="">
+            <label for="interest">Music</label>
+            <input type="checkbox" name="interest" id="">
+            <br><br> -->
+            
+            <button type="submit"><a href="./message.html">Create Account</a></button>
+            <!-- <input type="submit" value="submit">
+            <input type="reset" value="reset"> -->
+            <p>Already have an account? <a href="./signin.html">Signin</a></p>
+        
+        </form>
+    </main>
+</body>
+</html>

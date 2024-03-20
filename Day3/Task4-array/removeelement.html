@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  Remove "apple" from the following array:
+const fruits = ["banana", "mango", "apple", "kiwi"]; -->
+<script>
+    const fruits = ["banana", "mango", "apple", "kiwi"];
+    if(fruits.includes("apple")){
+        let index = fruits.indexOf("apple")
+        console.log(fruits.splice(index,1))
+        console.log(fruits);
+    } else
+        console.log("apple is not in the given array")
+
+</script>
+</body>
+</html>

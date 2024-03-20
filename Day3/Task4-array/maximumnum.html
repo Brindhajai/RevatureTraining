@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q4. Find the maximum value in the following array:
+const numbers = [23, 45, 12, 67, 89, 34];
+ -->
+ <script>
+    const numbers = [23, 45, 12, 67, 89, 34];
+    // using spread operator
+    console.log("Maximum number",Math.max(...numbers));
+
+    // using reduce 
+    const maximum=numbers.reduce((a,b)=>Math.max(a,b));
+    console.log(maximum);    
+ </script>
+</body>
+</html>
