@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- . store string str="a,b,c" into an array. -->
+ 
+    
+    <script>
+        strr = "a,b,c"
+        const arr=[...strr];
+        console.log(arr)
+        
+        // <!-- remove white spaces from the string str=" abc     ". -->
+        const str = " abc    ";
+        console.log(str.trim())
+        
+        // <!-- - 9. Add two strings using the concat() function. and print them. make sure there is space between concatenated elements. -->
+        const str1 = "Hello";
+        const str2 = "World!"
+        console.log("string concat:",str1.concat(" ",str2))
+
+        //  Remove 'e' from the following string: javascript const str = "abcedgedcve";
+        const string = "abcedgedcve"
+        const  newstring=string.replace(/e/g,"")
+        console.log("After removing e from abcedgedcve is",newstring);
+        
+        // Convert the following string into an array:
+        const newstr = "Hello there I am jack";
+        console.log(newstr.split(''))
+
+
+       
+
+</script>
+</body>
+</html>

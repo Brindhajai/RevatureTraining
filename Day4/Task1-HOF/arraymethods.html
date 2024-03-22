@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map and reduce</title>
+</head>
+<body>
+    <script>
+        var shopItems = [
+        {
+            name:"pants",
+            category:"clothes",
+            price:800
+        },
+        {
+            name:"shirts",
+            category:"clothes",
+            price:700
+        },
+        {
+            name:"coat",
+            category:"clothes",
+            price:900
+        }]    
+        console.log(SshopItems.map((ele,index,arr)=>{
+                ele.price = ele.price - 50
+                return ele;
+                }));
+ 
+        
+        const total=shopItems.reduce((acc,e) => {
+            return acc+e.price},0);
+        console.log(total)
+        console.log(shopItems)
+
+    </script>
+</body>
+</html>

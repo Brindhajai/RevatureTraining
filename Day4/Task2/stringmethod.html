@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  print the location of "my" in a string "I am enjoying my training". -->
+<script>
+    const str="I am enjoying my training";
+    const indexmy = str.indexOf("my");
+    console.log(`The location of "my" in the string is index ${indexmy}`);
+    
+    // print the location of "m" in a string "I am enjoying my training".
+    
+    const indexm = str.indexOf("m");
+    console.log(`The location of "m" in the string is index ${indexm}`);
+
+    // extract the complete string from index 3 of the string "I am enjoying my training". and store in a variable
+
+    const substr = str.slice(3);
+    //can use slice(),substr()
+    console.log(substr)
+
+    // extract string from index 0 to 4 from the string "I am enjoying my training". and store in a variable.
+    const index0to4 = str.slice(0,4);
+    console.log(index0to4)
+
+    // replace "training" with "journey" in "I am enjoying my training". and store in a variable.
+    const replaceto = str.replace("training","journey");
+    console.log(replaceto)
+
+    //  Print all the characters of a string using for loop.
+    console.log("Print all the characters")
+    for(i=0;i<=str.length-1;i++){
+        console.log(str.charAt(i));
+        // console.log(str[i])
+    }
+    // can use for and for..of
+    
+    // for(let e of str){
+    //     console.log(e)
+    // }
+
+</script>
+</body>
+</html>

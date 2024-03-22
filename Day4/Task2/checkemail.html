@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  Write a function to check if a given string is a valid email address:
+```javascript
+const email1 = "example@example.com";
+const email2 = "invalid@email"; -->
+<script>
+    const email1 = "example@example.com";
+    const email2 = "invalid@email"
+    function checkEmail(){
+        var validate=/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/;
+        if(email1.match(validate)){
+            console.log("Valid email address:",email1)
+        }else{
+            console.log("Not a valid email address",email1)
+        }
+        if(email2.match(validate)){
+            console.log("Valid email address:",email2)
+        }else{
+            console.log("Not a valid email address",email2)
+        }
+    }
+    checkEmail()
+</script>
+</body>
+</html>
